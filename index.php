@@ -7,20 +7,20 @@
         public $awards;
         public $box_office_gross;
 
-        public __constructor($_title, $_genre, $_year, $_director) {
+        function __construct($_title, $_genre, $_year, $_director) {
             $this->title = $_title;
             $this->genre = $_genre;
             $this->year = $_year;
             $this->director = $_director;
-        };
+        }
 
         public function setAwards($awards_number) {
             $this->awards = $awards_number;
-        };
+        }
         
         public function setBoxOffice($_box_office_gross) {
             $this->box_office_gross = $_box_office_gross;
-        };
+        }
     };
 
     $titanic = new Movie('Titanic', 'Drama', 1997, 'James Cameron');
